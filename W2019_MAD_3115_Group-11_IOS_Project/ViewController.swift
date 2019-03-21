@@ -13,8 +13,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        perform(#selector(splashscreen), with: nil, afterDelay: 3)
     }
 
 
+    
+    @objc func splashscreen()
+    {
+        performSegue(withIdentifier: "tologin", sender: self)
+    }
 }
 
