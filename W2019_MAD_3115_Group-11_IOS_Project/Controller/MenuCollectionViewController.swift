@@ -11,11 +11,11 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class MenuCollectionViewController: UICollectionViewController {
-var menuitem=["profile.png","order.png"]
-    var menulabel=["My Profile","My Orders","Products","Cart Items"]
+var menuitem=["profile4.png","order.png","product.png","cart.png","help.png","contact.png","logout.png"]
+    var menulabel=["My Profile","My Orders","Products","Cart Items","Need Help","Contact Us","Logout"]
     override func viewDidLoad() {
         super.viewDidLoad()
-
+self.collectionView.allowsSelection  = true;
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -57,6 +57,36 @@ var menuitem=["profile.png","order.png"]
         return cell
     }
 
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if (indexPath.item==0)
+        {
+            print("Profile")
+        }
+        else if (indexPath.item==1)
+        {
+            print("orders")
+        }
+        else if (indexPath.item==2)
+        {
+            print("products")
+        }
+        else if (indexPath.item==3)
+        {
+            print("cart")
+        }
+        else if (indexPath.item==4)
+        {
+            print("need help")
+        }
+        else if (indexPath.item==5)
+        {
+            print("contact us")
+        }
+        else if (indexPath.item==6)
+        {
+            print("logout")
+        }
+    }
     // MARK: UICollectionViewDelegate
 
     /*

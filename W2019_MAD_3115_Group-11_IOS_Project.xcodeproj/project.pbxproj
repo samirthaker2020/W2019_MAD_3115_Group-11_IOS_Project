@@ -18,6 +18,13 @@
 		EB9D1090224422EA00EA0728 /* order.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9D108F224422EA00EA0728 /* order.png */; };
 		EB9D109622442C0B00EA0728 /* order2.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9D109522442C0B00EA0728 /* order2.png */; };
 		EB9D109822442C0F00EA0728 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9D109722442C0F00EA0728 /* profile.png */; };
+		EB9D10A022442F7F00EA0728 /* product.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9D109922442F7E00EA0728 /* product.png */; };
+		EB9D10A122442F7F00EA0728 /* contact1.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9D109A22442F7E00EA0728 /* contact1.png */; };
+		EB9D10A222442F7F00EA0728 /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9D109B22442F7F00EA0728 /* logout.png */; };
+		EB9D10A322442F7F00EA0728 /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9D109C22442F7F00EA0728 /* help.png */; };
+		EB9D10A422442F7F00EA0728 /* cart.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9D109D22442F7F00EA0728 /* cart.png */; };
+		EB9D10A522442F7F00EA0728 /* contact.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9D109E22442F7F00EA0728 /* contact.png */; };
+		EB9D10A622442F7F00EA0728 /* profile4.png in Resources */ = {isa = PBXBuildFile; fileRef = EB9D109F22442F7F00EA0728 /* profile4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +41,13 @@
 		EB9D108F224422EA00EA0728 /* order.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = order.png; sourceTree = "<group>"; };
 		EB9D109522442C0B00EA0728 /* order2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = order2.png; sourceTree = "<group>"; };
 		EB9D109722442C0F00EA0728 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		EB9D109922442F7E00EA0728 /* product.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = product.png; sourceTree = "<group>"; };
+		EB9D109A22442F7E00EA0728 /* contact1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact1.png; sourceTree = "<group>"; };
+		EB9D109B22442F7F00EA0728 /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout.png; sourceTree = "<group>"; };
+		EB9D109C22442F7F00EA0728 /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
+		EB9D109D22442F7F00EA0728 /* cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cart.png; sourceTree = "<group>"; };
+		EB9D109E22442F7F00EA0728 /* contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact.png; sourceTree = "<group>"; };
+		EB9D109F22442F7F00EA0728 /* profile4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile4.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +121,13 @@
 		EB9D1086224413FA00EA0728 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				EB9D109D22442F7F00EA0728 /* cart.png */,
+				EB9D109E22442F7F00EA0728 /* contact.png */,
+				EB9D109A22442F7E00EA0728 /* contact1.png */,
+				EB9D109C22442F7F00EA0728 /* help.png */,
+				EB9D109B22442F7F00EA0728 /* logout.png */,
+				EB9D109922442F7E00EA0728 /* product.png */,
+				EB9D109F22442F7F00EA0728 /* profile4.png */,
 				EB9D109722442C0F00EA0728 /* profile.png */,
 				EB9D109522442C0B00EA0728 /* order2.png */,
 				EB9D108F224422EA00EA0728 /* order.png */,
@@ -172,12 +193,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB9D10A622442F7F00EA0728 /* profile4.png in Resources */,
 				EB8FDE002243F593009430A9 /* LaunchScreen.storyboard in Resources */,
 				EB9D109822442C0F00EA0728 /* profile.png in Resources */,
 				EB8FDDFD2243F593009430A9 /* Assets.xcassets in Resources */,
+				EB9D10A422442F7F00EA0728 /* cart.png in Resources */,
 				EB8FDDFB2243F591009430A9 /* Main.storyboard in Resources */,
+				EB9D10A122442F7F00EA0728 /* contact1.png in Resources */,
+				EB9D10A522442F7F00EA0728 /* contact.png in Resources */,
 				EB9D1090224422EA00EA0728 /* order.png in Resources */,
+				EB9D10A322442F7F00EA0728 /* help.png in Resources */,
+				EB9D10A022442F7F00EA0728 /* product.png in Resources */,
 				EB9D109622442C0B00EA0728 /* order2.png in Resources */,
+				EB9D10A222442F7F00EA0728 /* logout.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
