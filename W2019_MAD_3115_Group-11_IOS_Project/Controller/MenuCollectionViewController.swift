@@ -97,8 +97,8 @@ getproducts()
             print("products")
             
             let sb=UIStoryboard(name: "Main", bundle: nil)
-            let homevc=sb.instantiateViewController(withIdentifier: "toproductpage") as! ProductViewController
-        self.navigationController?.pushViewController(homevc, animated: true)
+           /* let homevc=sb.instantiateViewController(withIdentifier: "toproductpage") as! ProductViewController
+        self.navigationController?.pushViewController(homevc, animated: true) */
         }
         else if (indexPath.item==3)
         {
