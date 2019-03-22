@@ -11,7 +11,7 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class MenuCollectionViewController: UICollectionViewController {
-    let p1=Products()
+   
     
    
     var menuitem=["profile4.png","order.png","product.png","cart.png","help.png","contact.png","logout.png"]
@@ -23,14 +23,8 @@ self.collectionView.allowsSelection  = true;
         self.navigationItem.hidesBackButton=true
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-getproducts()
-       for (_,v) in p1.productdetails
-        {
-            
-            print(v.productid)
-            print(v.productname)
-            print(v.productprice)
-        }
+ 
+      
         // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
@@ -40,21 +34,7 @@ getproducts()
     
     
     
-    func getproducts()
-    {
-        let product1 = Products(productid: "P001", productname: "Hard Drive", productprice: 120.00)
-        let product2 = Products(productid: "P002", productname: "ZIP drive", productprice: 90.00)
-        let product3 = Products(productid: "P003", productname: "Floppy disk", productprice: 50.00)
-        let product4 = Products(productid: "P004", productname: "Monitor", productprice: 300.00)
-        let product5 = Products(productid: "P005", productname: "iPhone 7 Plus", productprice: 1200.00)
-      //  let totalProducts = [product1,product2,product3,product4,product5]
-        
-        p1.addproducts(pid: "P001", prod: product1)
-        p1.addproducts(pid: "P002", prod: product2)
-        p1.addproducts(pid: "P003", prod: product3)
-        p1.addproducts(pid: "P004", prod: product4)
-        p1.addproducts(pid: "P005", prod: product5)
-    }
+    
     /*
     // MARK: - Navigation
 
@@ -101,8 +81,8 @@ getproducts()
             print("products")
             
             let sb=UIStoryboard(name: "Main", bundle: nil)
-           /* let homevc=sb.instantiateViewController(withIdentifier: "toproductpage") as! ProductViewController
-        self.navigationController?.pushViewController(homevc, animated: true) */
+            let homevc=sb.instantiateViewController(withIdentifier: "productdetailpage") as!   ProductDetailsViewController
+        self.navigationController?.pushViewController(homevc, animated: true)
         }
         else if (indexPath.item==3)
         {

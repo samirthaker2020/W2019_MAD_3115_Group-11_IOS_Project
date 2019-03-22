@@ -31,8 +31,14 @@
 		EBB59ABE2245499F008CC122 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB59AB82245499F008CC122 /* Customer.swift */; };
 		EBB59ABF2245499F008CC122 /* OrderDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB59AB92245499F008CC122 /* OrderDetails.swift */; };
 		EBB59AC02245499F008CC122 /* Orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB59ABA2245499F008CC122 /* Orders.swift */; };
-		EBB59AC12245499F008CC122 /* UserLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB59ABB2245499F008CC122 /* UserLogin.swift */; };
 		EBB59AC4224559CA008CC122 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB59AC3224559CA008CC122 /* SignupViewController.swift */; };
+		EBB59AC8224584EA008CC122 /* ProductDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB59AC7224584EA008CC122 /* ProductDetailsCollectionViewCell.swift */; };
+		EBB59ACA22458C69008CC122 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB59AC922458C69008CC122 /* ProductDetailsViewController.swift */; };
+		EBB59AD0224598E9008CC122 /* monitor.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB59ACB224598E9008CC122 /* monitor.png */; };
+		EBB59AD1224598E9008CC122 /* pendrive.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB59ACC224598E9008CC122 /* pendrive.png */; };
+		EBB59AD2224598E9008CC122 /* earpods.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB59ACD224598E9008CC122 /* earpods.png */; };
+		EBB59AD3224598E9008CC122 /* iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB59ACE224598E9008CC122 /* iphone.png */; };
+		EBB59AD4224598E9008CC122 /* hdd.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB59ACF224598E9008CC122 /* hdd.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,8 +68,14 @@
 		EBB59AB82245499F008CC122 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		EBB59AB92245499F008CC122 /* OrderDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderDetails.swift; sourceTree = "<group>"; };
 		EBB59ABA2245499F008CC122 /* Orders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Orders.swift; sourceTree = "<group>"; };
-		EBB59ABB2245499F008CC122 /* UserLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLogin.swift; sourceTree = "<group>"; };
 		EBB59AC3224559CA008CC122 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		EBB59AC7224584EA008CC122 /* ProductDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
+		EBB59AC922458C69008CC122 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
+		EBB59ACB224598E9008CC122 /* monitor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monitor.png; sourceTree = "<group>"; };
+		EBB59ACC224598E9008CC122 /* pendrive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pendrive.png; sourceTree = "<group>"; };
+		EBB59ACD224598E9008CC122 /* earpods.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earpods.png; sourceTree = "<group>"; };
+		EBB59ACE224598E9008CC122 /* iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone.png; sourceTree = "<group>"; };
+		EBB59ACF224598E9008CC122 /* hdd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hdd.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +125,6 @@
 		EB9D107F2244071600EA0728 /* Modal */ = {
 			isa = PBXGroup;
 			children = (
-				EBB59ABB2245499F008CC122 /* UserLogin.swift */,
 				EBB59AB72245499F008CC122 /* ShippingInfo.swift */,
 				EBB59AB82245499F008CC122 /* Customer.swift */,
 				EBB59AB92245499F008CC122 /* OrderDetails.swift */,
@@ -130,6 +141,8 @@
 				EB9D108B2244200300EA0728 /* MenuCollectionViewController.swift */,
 				EB9D108D224421C000EA0728 /* MenuCollectionViewCell.swift */,
 				EBB59AC3224559CA008CC122 /* SignupViewController.swift */,
+				EBB59AC922458C69008CC122 /* ProductDetailsViewController.swift */,
+				EBB59AC7224584EA008CC122 /* ProductDetailsCollectionViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -145,6 +158,11 @@
 		EB9D1086224413FA00EA0728 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				EBB59ACD224598E9008CC122 /* earpods.png */,
+				EBB59ACF224598E9008CC122 /* hdd.png */,
+				EBB59ACE224598E9008CC122 /* iphone.png */,
+				EBB59ACB224598E9008CC122 /* monitor.png */,
+				EBB59ACC224598E9008CC122 /* pendrive.png */,
 				EB9D109D22442F7F00EA0728 /* cart.png */,
 				EB9D109E22442F7F00EA0728 /* contact.png */,
 				EB9D109A22442F7E00EA0728 /* contact1.png */,
@@ -225,8 +243,13 @@
 				EB8FDDFB2243F591009430A9 /* Main.storyboard in Resources */,
 				EB9D10A122442F7F00EA0728 /* contact1.png in Resources */,
 				EB9D10A522442F7F00EA0728 /* contact.png in Resources */,
+				EBB59AD3224598E9008CC122 /* iphone.png in Resources */,
+				EBB59AD0224598E9008CC122 /* monitor.png in Resources */,
 				EB9D1090224422EA00EA0728 /* order.png in Resources */,
+				EBB59AD1224598E9008CC122 /* pendrive.png in Resources */,
 				EB9D10A322442F7F00EA0728 /* help.png in Resources */,
+				EBB59AD2224598E9008CC122 /* earpods.png in Resources */,
+				EBB59AD4224598E9008CC122 /* hdd.png in Resources */,
 				EB9D10A022442F7F00EA0728 /* product.png in Resources */,
 				EB9D109622442C0B00EA0728 /* order2.png in Resources */,
 				EB9D10A222442F7F00EA0728 /* logout.png in Resources */,
@@ -242,13 +265,14 @@
 			files = (
 				EB9D10832244075D00EA0728 /* LoginViewController.swift in Sources */,
 				EB9D108C2244200300EA0728 /* MenuCollectionViewController.swift in Sources */,
-				EBB59AC12245499F008CC122 /* UserLogin.swift in Sources */,
+				EBB59ACA22458C69008CC122 /* ProductDetailsViewController.swift in Sources */,
 				EBB59AC02245499F008CC122 /* Orders.swift in Sources */,
 				EB8FDDF82243F591009430A9 /* ViewController.swift in Sources */,
 				EBB59ABD2245499F008CC122 /* ShippingInfo.swift in Sources */,
 				EB9D10AE2244558E00EA0728 /* Products.swift in Sources */,
 				EBB59ABF2245499F008CC122 /* OrderDetails.swift in Sources */,
 				EB8FDDF62243F591009430A9 /* AppDelegate.swift in Sources */,
+				EBB59AC8224584EA008CC122 /* ProductDetailsCollectionViewCell.swift in Sources */,
 				EBB59AC4224559CA008CC122 /* SignupViewController.swift in Sources */,
 				EBB59ABE2245499F008CC122 /* Customer.swift in Sources */,
 				EB9D108E224421C000EA0728 /* MenuCollectionViewCell.swift in Sources */,

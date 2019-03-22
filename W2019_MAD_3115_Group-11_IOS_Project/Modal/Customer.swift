@@ -7,9 +7,10 @@
 //
 
 import Foundation
-class Customer:UserLogin
+class Customer
 {
-   
+    var uid:String?
+    var pass:String?
     var custid : Int?
     var customerName : String?
     var address : String?
@@ -18,9 +19,10 @@ class Customer:UserLogin
     var email:String?
     var c:Bool?
     var customerdetails=Dictionary<String,Customer>()
-    override init()
+     init()
     {
-        super.init()
+        self.uid=String()
+        self.pass=String()
         self.custid=Int()
         self.customerName=String()
         self.address=String()
@@ -29,7 +31,7 @@ class Customer:UserLogin
         self.c=Bool()
         
     }
-    init(custid: Int,customerName: String,address: String,creditCardInfo: String,email:String,shipinfo:String)
+    init(custid: Int,customerName: String,address: String,creditCardInfo: String,email:String,shipinfo:String,uid:String,pass:String)
     {
         self.shipinfo=shipinfo
         self.email=email
@@ -37,25 +39,41 @@ class Customer:UserLogin
         self.customerName = customerName
         self.address = address
         self.creditCardInfo = creditCardInfo
-        super.init()
+        self.uid=uid
+        self.pass=pass
+        
     }
    
     
     func checklogin(uid:String,pass:String)->Bool
     {
-        
-        c=super.verifylogin(uid: uid,pass: pass)
+        if  let u = customerdetails[uid]
+        {
+            if u.pass == pass
+            {
+                c=true
+            }
+            else{
+                c = false
+            }
+        }
+        else
+        {
+            c=false
+        }
+      
+       // c=verifylogin(uid: uid,pass: pass)
         return c!
     }
     
-    func register(cid:Int,usid:String,cust:Customer,user:UserLogin)
+    func register(usid:String,cust:Customer)
     {
-                customerdetails[usid]=cust
-        super.users[usid]=user
+        
+             customerdetails.updateValue(cust, forKey: usid)
+        
         
         print(customerdetails)
-        print(users)
-    }
+     }
     
     
     

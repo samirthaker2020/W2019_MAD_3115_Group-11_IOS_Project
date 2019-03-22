@@ -19,11 +19,18 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var txtpass: UITextField!
     @IBOutlet weak var txtuid: UITextField!
     @IBOutlet weak var switchStatus: UISwitch!
-    let u=UserLogin.sharedInstance
+    
     let cust=Customer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let c2=Customer(custid: 1,customerName: "samir",address: "jnj",creditCardInfo: "44324",email:"d@gmail.com",shipinfo:"nds",uid:"samir",pass:"thaker")
+        
+        cust.customerdetails.updateValue(c2, forKey: "samir")
+        
+        
+        print(cust.customerdetails)
          self.navigationItem.hidesBackButton=true
         if let uid = userdefaults.string(forKey: "userid")
         {
@@ -37,17 +44,14 @@ class LoginViewController: UIViewController {
         }
          // self.navigationItem.hidesBackButton=true
         // Do any additional setup after loading the view.
-        let user1=UserLogin(sid:"samir",pass:"thaker")
-        u.reg(uid: "samir", s: user1)
-        let user2=UserLogin(sid:"gurminder",pass:"kaur")
-        u.reg(uid: "gurminder", s: user2)
+       
        // print(u.users)
     }
     
 
     @IBAction func btnlogin(_ sender: Any) {
         
-        let c = u.verifylogin(uid: txtuid.text!, pass: txtpass.text!)
+        let c =  cust.checklogin(uid: txtuid.text!, pass: txtpass.text!)
         
         if (c)
         {
@@ -76,7 +80,7 @@ class LoginViewController: UIViewController {
             self.present(alert,animated: true,completion: nil)
             self.txtuid.text=""
             self.txtpass.text=""
-        }
+        } 
     }
     
     

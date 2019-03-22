@@ -12,18 +12,21 @@ class Products:IDisplay
        static let sharedproduct = Products()
     let productid:String
     var productname:String
+    var pimage:String
     var productprice:Float
     var productdetails=Dictionary<String,Products>()
     init() {
         self.productid=String()
         self.productname=String()
         self.productprice=Float()
+        self.pimage=String()
         
     }
-    init(productid:String, productname:String, productprice:Float) {
+    init(productid:String, productname:String, productprice:Float,pimage:String) {
         self.productid = productid
         self.productname = productname
         self.productprice = productprice
+        self.pimage=pimage
     }
     func addproducts(pid:String,prod:Products)
     {
