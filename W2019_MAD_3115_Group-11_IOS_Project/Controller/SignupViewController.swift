@@ -33,7 +33,11 @@ class SignupViewController: UIViewController {
             
             cust.register(cid: random, usid: txtuserid.text!, cust: c1, user: u1)
 
-            
+            let alert = UIAlertController(title:nil,message:"Registered Sucessfully",preferredStyle: .alert)
+            let addaction=UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(addaction)
+            self.present(alert,animated: true,completion: nil)
+            perform(#selector(movetologin), with: nil, afterDelay: 2)
         }
         else
         {
@@ -46,7 +50,9 @@ class SignupViewController: UIViewController {
         }
     }
     
-    
+    @objc func movetologin() {
+        performSegue(withIdentifier: "movetologinpage", sender: self)
+    }
     
     
     override func viewDidLoad() {

@@ -265,11 +265,12 @@
                         <outlet property="txtpass" destination="sxe-dL-6Dm" id="Cu2-Pi-a88"/>
                         <outlet property="txtshipinfo" destination="grh-Ix-lul" id="zAf-fC-O5A"/>
                         <outlet property="txtuserid" destination="5Ao-z2-vGL" id="bkP-nD-8TN"/>
+                        <segue destination="4h6-Zp-B9Q" kind="show" identifier="movetologinpage" id="S3x-gf-Lqa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tfs-Oa-55Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="789.60000000000002" y="671.51424287856082"/>
+            <point key="canvasLocation" x="782" y="711"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NmT-7s-9F5">
@@ -308,4 +309,7 @@
             <point key="canvasLocation" x="2344.8000000000002" y="26.53673163418291"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="S3x-gf-Lqa"/>
+    </inferredMetricsTieBreakers>
 </document>
