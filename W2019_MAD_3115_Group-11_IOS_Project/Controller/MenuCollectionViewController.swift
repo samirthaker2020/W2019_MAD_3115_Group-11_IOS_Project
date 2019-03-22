@@ -18,7 +18,9 @@ class MenuCollectionViewController: UICollectionViewController {
     var menulabel=["My Profile","My Orders","Products","Cart Items","Need Help","Contact Us","Logout"]
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 self.collectionView.allowsSelection  = true;
+        self.navigationItem.hidesBackButton=true
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 getproducts()
@@ -35,6 +37,8 @@ getproducts()
         // Do any additional setup after loading the view.
     }
 
+    
+    
     
     func getproducts()
     {
@@ -115,6 +119,10 @@ getproducts()
         else if (indexPath.item==6)
         {
             print("logout")
+             let sb=UIStoryboard(name: "Main", bundle: nil)
+        let lionvc=sb.instantiateViewController(withIdentifier: "splashscreen") as! ViewController
+            self.present(lionvc,animated: true)
+            
         }
     }
     // MARK: UICollectionViewDelegate

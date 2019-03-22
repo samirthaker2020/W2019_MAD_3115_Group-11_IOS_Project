@@ -30,9 +30,8 @@ class UserLogin
     {
         users.updateValue(s, forKey: uid)
     }
-    func checklogin(uid:String,pass:String)->Bool   {
-        
-        
+    func verifylogin(uid:String,pass:String)->Bool   {
+    
         
         if let u=users[uid]
         {
