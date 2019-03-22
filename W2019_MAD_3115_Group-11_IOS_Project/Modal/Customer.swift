@@ -51,7 +51,10 @@ class Customer:UserLogin
     func register(cid:Int,usid:String,cust:Customer,user:UserLogin)
     {
                 customerdetails[usid]=cust
-        //super.userlogin[usid]=user
+        super.users[usid]=user
+        
+        print(customerdetails)
+        print(users)
     }
     
     
