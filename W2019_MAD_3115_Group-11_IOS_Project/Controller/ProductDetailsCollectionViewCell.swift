@@ -12,4 +12,25 @@ class ProductDetailsCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var lblpid: UILabel!
  
+    @IBOutlet weak var lblpimage: UIImageView!
+
+    @IBOutlet weak var lblpname: UILabel!
+    
+
+    @IBOutlet weak var lblprice: UILabel!
+    
+    @IBOutlet weak var lblqty: UITextField!
+    
+
+    @IBAction func qtystepper(_ sender: UIStepper) {
+        
+    lblqty.text=String(Int(sender.value))
+        
+    }
+    
+    @IBAction func btnadd(_ sender: UIButton) {
+    }
+    
+    
+    
 }

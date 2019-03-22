@@ -34,11 +34,11 @@
 		EBB59AC4224559CA008CC122 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB59AC3224559CA008CC122 /* SignupViewController.swift */; };
 		EBB59AC8224584EA008CC122 /* ProductDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB59AC7224584EA008CC122 /* ProductDetailsCollectionViewCell.swift */; };
 		EBB59ACA22458C69008CC122 /* ProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB59AC922458C69008CC122 /* ProductDetailsViewController.swift */; };
-		EBB59AD0224598E9008CC122 /* monitor.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB59ACB224598E9008CC122 /* monitor.png */; };
-		EBB59AD1224598E9008CC122 /* pendrive.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB59ACC224598E9008CC122 /* pendrive.png */; };
-		EBB59AD2224598E9008CC122 /* earpods.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB59ACD224598E9008CC122 /* earpods.png */; };
-		EBB59AD3224598E9008CC122 /* iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB59ACE224598E9008CC122 /* iphone.png */; };
-		EBB59AD4224598E9008CC122 /* hdd.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB59ACF224598E9008CC122 /* hdd.png */; };
+		EBB59AE42245A5F4008CC122 /* iphone7p.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB59ADF2245A5F3008CC122 /* iphone7p.png */; };
+		EBB59AE62245A5F4008CC122 /* hdd.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB59AE12245A5F3008CC122 /* hdd.png */; };
+		EBB59AE72245A5F4008CC122 /* monitor.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB59AE22245A5F3008CC122 /* monitor.png */; };
+		EBB59AE82245A5F4008CC122 /* pendrive.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB59AE32245A5F4008CC122 /* pendrive.png */; };
+		EBB59AEA2245A867008CC122 /* earpods.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBB59AE92245A867008CC122 /* earpods.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,11 +71,11 @@
 		EBB59AC3224559CA008CC122 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		EBB59AC7224584EA008CC122 /* ProductDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
 		EBB59AC922458C69008CC122 /* ProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsViewController.swift; sourceTree = "<group>"; };
-		EBB59ACB224598E9008CC122 /* monitor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monitor.png; sourceTree = "<group>"; };
-		EBB59ACC224598E9008CC122 /* pendrive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pendrive.png; sourceTree = "<group>"; };
-		EBB59ACD224598E9008CC122 /* earpods.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earpods.png; sourceTree = "<group>"; };
-		EBB59ACE224598E9008CC122 /* iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone.png; sourceTree = "<group>"; };
-		EBB59ACF224598E9008CC122 /* hdd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hdd.png; sourceTree = "<group>"; };
+		EBB59ADF2245A5F3008CC122 /* iphone7p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone7p.png; sourceTree = "<group>"; };
+		EBB59AE12245A5F3008CC122 /* hdd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hdd.png; sourceTree = "<group>"; };
+		EBB59AE22245A5F3008CC122 /* monitor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monitor.png; sourceTree = "<group>"; };
+		EBB59AE32245A5F4008CC122 /* pendrive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pendrive.png; sourceTree = "<group>"; };
+		EBB59AE92245A867008CC122 /* earpods.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earpods.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,11 +158,11 @@
 		EB9D1086224413FA00EA0728 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				EBB59ACD224598E9008CC122 /* earpods.png */,
-				EBB59ACF224598E9008CC122 /* hdd.png */,
-				EBB59ACE224598E9008CC122 /* iphone.png */,
-				EBB59ACB224598E9008CC122 /* monitor.png */,
-				EBB59ACC224598E9008CC122 /* pendrive.png */,
+				EBB59AE92245A867008CC122 /* earpods.jpg */,
+				EBB59AE12245A5F3008CC122 /* hdd.png */,
+				EBB59ADF2245A5F3008CC122 /* iphone7p.png */,
+				EBB59AE22245A5F3008CC122 /* monitor.png */,
+				EBB59AE32245A5F4008CC122 /* pendrive.png */,
 				EB9D109D22442F7F00EA0728 /* cart.png */,
 				EB9D109E22442F7F00EA0728 /* contact.png */,
 				EB9D109A22442F7E00EA0728 /* contact1.png */,
@@ -235,23 +235,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBB59AEA2245A867008CC122 /* earpods.jpg in Resources */,
 				EB9D10A622442F7F00EA0728 /* profile4.png in Resources */,
 				EB8FDE002243F593009430A9 /* LaunchScreen.storyboard in Resources */,
 				EB9D109822442C0F00EA0728 /* profile.png in Resources */,
 				EB8FDDFD2243F593009430A9 /* Assets.xcassets in Resources */,
 				EB9D10A422442F7F00EA0728 /* cart.png in Resources */,
 				EB8FDDFB2243F591009430A9 /* Main.storyboard in Resources */,
+				EBB59AE72245A5F4008CC122 /* monitor.png in Resources */,
 				EB9D10A122442F7F00EA0728 /* contact1.png in Resources */,
+				EBB59AE42245A5F4008CC122 /* iphone7p.png in Resources */,
 				EB9D10A522442F7F00EA0728 /* contact.png in Resources */,
-				EBB59AD3224598E9008CC122 /* iphone.png in Resources */,
-				EBB59AD0224598E9008CC122 /* monitor.png in Resources */,
+				EBB59AE62245A5F4008CC122 /* hdd.png in Resources */,
 				EB9D1090224422EA00EA0728 /* order.png in Resources */,
-				EBB59AD1224598E9008CC122 /* pendrive.png in Resources */,
 				EB9D10A322442F7F00EA0728 /* help.png in Resources */,
-				EBB59AD2224598E9008CC122 /* earpods.png in Resources */,
-				EBB59AD4224598E9008CC122 /* hdd.png in Resources */,
 				EB9D10A022442F7F00EA0728 /* product.png in Resources */,
 				EB9D109622442C0B00EA0728 /* order2.png in Resources */,
+				EBB59AE82245A5F4008CC122 /* pendrive.png in Resources */,
 				EB9D10A222442F7F00EA0728 /* logout.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -27,9 +27,9 @@ getproducts()
     {
         let product1 = Products(productid: "P001", productname: "Hard Drive", productprice: 120.00,pimage:"hdd.png")
         let product2 = Products(productid: "P002", productname: "Pen drive", productprice: 20.00,pimage:"pendrive.png")
-        let product3 = Products(productid: "P003", productname: "Earpods", productprice: 50.00)
-        let product4 = Products(productid: "P004", productname: "monitor", productprice: 300.00)
-        let product5 = Products(productid: "P005", productname: "iphone", productprice: 1200.00)
+        let product3 = Products(productid: "P003", productname: "Earpods", productprice: 50.00,pimage:"earpods.jpg")
+        let product4 = Products(productid: "P004", productname: "monitor", productprice: 300.00,pimage:"monitor.png")
+        let product5 = Products(productid: "P005", productname: "iphone", productprice: 1200.00,pimage:"iphone7p.png")
         
          glblData.addproducts(pid: "P001", prod: product1)
         glblData.addproducts(pid: "P002", prod: product2)
@@ -54,6 +54,9 @@ getproducts()
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "pcell", for: indexPath) as! ProductDetailsCollectionViewCell
       let m=a[indexPath.row]
         cell.lblpid.text = m.productid
+        cell.lblprice.text="Price::\(String(m.productprice))"
+        cell.lblpname.text="Product Name::\(m.productname)"
+        cell.lblpimage.image=UIImage(named: m.pimage)
         // Configure the cell
         
         return cell
