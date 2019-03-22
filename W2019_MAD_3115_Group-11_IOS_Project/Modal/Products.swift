@@ -9,7 +9,7 @@
 import Foundation
 class Products:IDisplay
 {
-    
+       static let sharedproduct = Products()
     let productid:String
     var productname:String
     var productprice:Float

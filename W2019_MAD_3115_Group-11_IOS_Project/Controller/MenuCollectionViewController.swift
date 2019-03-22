@@ -12,7 +12,9 @@ private let reuseIdentifier = "Cell"
 
 class MenuCollectionViewController: UICollectionViewController {
     let p1=Products()
-var menuitem=["profile4.png","order.png","product.png","cart.png","help.png","contact.png","logout.png"]
+    
+   
+    var menuitem=["profile4.png","order.png","product.png","cart.png","help.png","contact.png","logout.png"]
     var menulabel=["My Profile","My Orders","Products","Cart Items","Need Help","Contact Us","Logout"]
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +22,13 @@ self.collectionView.allowsSelection  = true;
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 getproducts()
-        p1.displaydata()
+       for (_,v) in p1.productdetails
+        {
+            
+            print(v.productid)
+            print(v.productname)
+            print(v.productprice)
+        }
         // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
@@ -87,6 +95,10 @@ getproducts()
         else if (indexPath.item==2)
         {
             print("products")
+            
+            let sb=UIStoryboard(name: "Main", bundle: nil)
+            let homevc=sb.instantiateViewController(withIdentifier: "toproductpage") as! ProductViewController
+        self.navigationController?.pushViewController(homevc, animated: true)
         }
         else if (indexPath.item==3)
         {

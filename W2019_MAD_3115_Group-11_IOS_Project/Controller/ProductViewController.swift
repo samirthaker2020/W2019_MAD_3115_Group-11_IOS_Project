@@ -8,16 +8,48 @@
 
 import UIKit
 
-class ProductViewController: UIViewController {
-
+class ProductViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+   
+    
+let glblData = Products.sharedproduct
     @IBOutlet weak var tblproductdetails: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
         // Do any additional setup after loading the view.
     }
     
-
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return glblData.productdetails.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let sc=tableView.dequeueReusableCell(withIdentifier: "productcell") as! ProductDetailsTableViewCell
+    let p1=Products()
+        for (_,v) in p1.productdetails
+        {
+            print(v.productid)
+            print(v.productname)
+            print(v.productprice)
+        }
+        /*   let p1=Products()
+        for (_,v) in p1.productdetails
+        {
+            print(v.productid)
+            print(v.productname)
+            print(v.productprice)
+            sc.productid.text=v.productid
+            sc.productname.text=v.productname
+            sc.price.text=String(v.productprice)
+            
+        } */
+        
+        
+        return sc
+    }
     /*
     // MARK: - Navigation
 
