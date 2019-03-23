@@ -86,7 +86,9 @@ self.collectionView.allowsSelection  = true;
         }
         else if (indexPath.item==3)
         {
-            print("cart")
+            let sb=UIStoryboard(name: "Main", bundle: nil)
+            let homevc=sb.instantiateViewController(withIdentifier: "viewcartpage") as!   ViewCartViewController
+            self.navigationController?.pushViewController(homevc, animated: true)
         }
         else if (indexPath.item==4)
         {

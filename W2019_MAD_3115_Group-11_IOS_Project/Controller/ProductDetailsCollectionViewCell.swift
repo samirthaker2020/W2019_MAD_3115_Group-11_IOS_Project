@@ -29,7 +29,7 @@ class ProductDetailsCollectionViewCell: UICollectionViewCell
     @IBAction func qtystepper(_ sender: UIStepper) {
         
     lblqty.text=String(Int(sender.value))
-        
+        Extra.quantity=Int(sender.value)
     }
      
     /*override func setSelected(_ selected: Bool, animated: Bool) {
