@@ -92,11 +92,15 @@ self.collectionView.allowsSelection  = true;
         }
         else if (indexPath.item==4)
         {
-            print("need help")
+            let sb=UIStoryboard(name: "Main", bundle: nil)
+            let homevc=sb.instantiateViewController(withIdentifier: "helppage") as!  HelpViewController
+            self.navigationController?.pushViewController(homevc, animated: true)
         }
         else if (indexPath.item==5)
         {
-            print("contact us")
+            let sb=UIStoryboard(name: "Main", bundle: nil)
+            let homevc=sb.instantiateViewController(withIdentifier: "contactus") as!   ContactUsViewController
+            self.navigationController?.pushViewController(homevc, animated: true)
         }
         else if (indexPath.item==6)
         {

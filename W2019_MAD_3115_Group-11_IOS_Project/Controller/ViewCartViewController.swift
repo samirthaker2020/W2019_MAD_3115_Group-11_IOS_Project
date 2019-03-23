@@ -26,7 +26,7 @@ class ViewCartViewController: UIViewController,UITableViewDataSource,UITableView
           item.append(sh)
         self.tbl1.delegate=self
         self.tbl1.dataSource=self
-//getdata()
+getdata()
         // Do any additional setup after loading the view.
     }
     
@@ -57,7 +57,8 @@ class ViewCartViewController: UIViewController,UITableViewDataSource,UITableView
         cell.rname.text="ProductName:\(m.productname)"
         cell.rpid.text="ProductID:\(m.productid!)"
         cell.rpice.text="price:\(String(m.price))"
-        
+        cell.rqty.text = "Quantity:\(String(Extra.quantity))"
+        cell.rtotal.text="Total:\(String(m.price * Float(Extra.quantity)))"
         return cell
     }
     
