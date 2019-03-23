@@ -8,7 +8,8 @@
 
 import UIKit
 
-class ProductDetailsCollectionViewCell: UICollectionViewCell {
+class ProductDetailsCollectionViewCell: UICollectionViewCell
+{
     
     @IBOutlet weak var lblpid: UILabel!
  
@@ -21,16 +22,13 @@ class ProductDetailsCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var lblqty: UITextField!
     
-
+    @IBOutlet weak var btnadd1: UIButton!
+    
     @IBAction func qtystepper(_ sender: UIStepper) {
         
     lblqty.text=String(Int(sender.value))
         
     }
-    
-    @IBAction func btnadd(_ sender: UIButton) {
-    }
-    
     
     
 }

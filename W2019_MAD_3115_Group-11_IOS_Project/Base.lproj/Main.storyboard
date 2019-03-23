@@ -323,7 +323,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="144" height="128"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quantity" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XZV-fN-XGN">
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Quantity" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XZV-fN-XGN">
                                                     <rect key="frame" x="175" y="5" width="95" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <nil key="textColor"/>
@@ -343,13 +343,11 @@
                                                     <color key="backgroundColor" red="0.68904476820000005" green="0.066734083" blue="0.0" alpha="0.41103916950000002" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title="ADD TO CART"/>
-                                                    <connections>
-                                                        <action selector="btnadd:" destination="pL8-ak-JJe" eventType="touchUpInside" id="920-Iz-fT8"/>
-                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </view>
                                         <connections>
+                                            <outlet property="btnadd1" destination="0Ud-CS-fKb" id="2Pe-N1-dhc"/>
                                             <outlet property="lblpid" destination="hwN-WS-UuQ" id="On1-P9-n99"/>
                                             <outlet property="lblpimage" destination="wuW-nh-nj1" id="3UZ-Lh-NVG"/>
                                             <outlet property="lblpname" destination="HMo-lO-Jhj" id="fb5-sS-roP"/>

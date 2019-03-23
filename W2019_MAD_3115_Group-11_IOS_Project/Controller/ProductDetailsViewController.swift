@@ -10,7 +10,7 @@ import UIKit
 
 class ProductDetailsViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate {
    
-    
+    var currentCell = 0
 let glblData = Products.sharedproduct
     var a=[Products]()
     @IBOutlet weak var pcollection: UICollectionView!
@@ -57,10 +57,19 @@ getproducts()
         cell.lblprice.text="Price::\(String(m.productprice))"
         cell.lblpname.text="Product Name::\(m.productname)"
         cell.lblpimage.image=UIImage(named: m.pimage)
+        cell.btnadd1.tag = indexPath.row
+        cell.btnadd1.addTarget(self, action: #selector(btnAddOrder(_ :)), for: .touchUpInside)
         // Configure the cell
         
         return cell
     }
+    
+    @objc func btnAddOrder(_ sender: UIButton)
+    {
+        print("Hello \(sender.tag)")
+    }
+    
+    
     /*
     // MARK: - Navigation
 

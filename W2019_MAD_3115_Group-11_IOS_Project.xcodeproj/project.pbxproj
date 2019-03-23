@@ -39,6 +39,7 @@
 		EBB59AE72245A5F4008CC122 /* monitor.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB59AE22245A5F3008CC122 /* monitor.png */; };
 		EBB59AE82245A5F4008CC122 /* pendrive.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB59AE32245A5F4008CC122 /* pendrive.png */; };
 		EBB59AEA2245A867008CC122 /* earpods.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBB59AE92245A867008CC122 /* earpods.jpg */; };
+		EBD49DD62245EA3D002F146D /* ShoppingCart.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD49DD52245EA3D002F146D /* ShoppingCart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		EBB59AE22245A5F3008CC122 /* monitor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monitor.png; sourceTree = "<group>"; };
 		EBB59AE32245A5F4008CC122 /* pendrive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pendrive.png; sourceTree = "<group>"; };
 		EBB59AE92245A867008CC122 /* earpods.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = earpods.jpg; sourceTree = "<group>"; };
+		EBD49DD52245EA3D002F146D /* ShoppingCart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				EBB59AB92245499F008CC122 /* OrderDetails.swift */,
 				EBB59ABA2245499F008CC122 /* Orders.swift */,
 				EB9D10AD2244558E00EA0728 /* Products.swift */,
+				EBD49DD52245EA3D002F146D /* ShoppingCart.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				EBB59ABF2245499F008CC122 /* OrderDetails.swift in Sources */,
 				EB8FDDF62243F591009430A9 /* AppDelegate.swift in Sources */,
 				EBB59AC8224584EA008CC122 /* ProductDetailsCollectionViewCell.swift in Sources */,
+				EBD49DD62245EA3D002F146D /* ShoppingCart.swift in Sources */,
 				EBB59AC4224559CA008CC122 /* SignupViewController.swift in Sources */,
 				EBB59ABE2245499F008CC122 /* Customer.swift in Sources */,
 				EB9D108E224421C000EA0728 /* MenuCollectionViewCell.swift in Sources */,
