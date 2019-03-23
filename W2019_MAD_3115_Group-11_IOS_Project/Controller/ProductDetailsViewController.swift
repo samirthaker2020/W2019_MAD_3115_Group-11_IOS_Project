@@ -96,15 +96,19 @@ extension ProductDetailsViewController: OnSelection
         
         let today=Date()
  let shopcart=ShoppingCart(proid:p.productid,pname:p.productname,pprice:p.productprice,qty:Extra.quantity,pdate:today)
-        let c = sh.addcartitem(shop: shopcart)
+        let sb=UIStoryboard(name: "Main", bundle: nil)
+        let lionvc=sb.instantiateViewController(withIdentifier: "viewcartpage") as!  ViewCartViewController
+        lionvc.sh=shopcart
+        self.navigationController?.pushViewController(lionvc, animated: true)
+       
         print(sh.productList)
-        if(c==true)
+       /* if(c==true)
         {
             let alert = UIAlertController(title:"product",message:"Added Sucessfully",preferredStyle: .alert)
             let addaction=UIAlertAction(title: "Done", style: .default, handler: nil)
             alert.addAction(addaction)
             self.present(alert,animated: true,completion: nil)
-         self.viewDidLoad()
+         
             
         }
         else
@@ -114,7 +118,10 @@ extension ProductDetailsViewController: OnSelection
             alert.addAction(addaction)
             self.present(alert,animated: true,completion: nil)
             
-        }
+        }*/
     }
+    
+    
+    
     
 }

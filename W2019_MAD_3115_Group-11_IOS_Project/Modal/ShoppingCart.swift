@@ -9,6 +9,7 @@
 import Foundation
 class ShoppingCart
 {
+     static let sharedcart = ShoppingCart()
     var check:Bool?
     private var cartid:Int?
     var productid:String?

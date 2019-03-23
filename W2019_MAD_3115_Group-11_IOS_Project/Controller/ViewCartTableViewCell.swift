@@ -10,6 +10,15 @@ import UIKit
 
 class ViewCartTableViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var rpid: UILabel!
+    
+    @IBOutlet weak var rname: UILabel!
+    
+    @IBOutlet weak var rpice: UILabel!
+    
+    @IBOutlet weak var rtotal: UILabel!
+    @IBOutlet weak var rqty: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

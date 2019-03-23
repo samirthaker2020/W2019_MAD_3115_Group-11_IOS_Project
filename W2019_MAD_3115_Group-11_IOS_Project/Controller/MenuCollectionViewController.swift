@@ -107,6 +107,8 @@ self.collectionView.allowsSelection  = true;
             
         }
     }
+    
+    
     // MARK: UICollectionViewDelegate
 
     /*
