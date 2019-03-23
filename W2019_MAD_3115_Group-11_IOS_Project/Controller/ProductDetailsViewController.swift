@@ -10,11 +10,15 @@ import UIKit
 
 class ProductDetailsViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate {
    
+    let sh=ShoppingCart()
+    
+    
     var currentCell = 0
 let glblData = Products.sharedproduct
     var a=[Products]()
     @IBOutlet weak var pcollection: UICollectionView!
     override func viewDidLoad() {
+        self.navigationItem.title = "Products"
         self.pcollection.delegate=self
         self.pcollection.dataSource=self
         super.viewDidLoad()
@@ -50,14 +54,16 @@ getproducts()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "pcell", for: indexPath) as! ProductDetailsCollectionViewCell
+         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "pcell", for: indexPath) as! ProductDetailsCollectionViewCell
+       
       let m=a[indexPath.row]
         cell.lblpid.text = m.productid
         cell.lblprice.text="Price::\(String(m.productprice))"
         cell.lblpname.text="Product Name::\(m.productname)"
         cell.lblpimage.image=UIImage(named: m.pimage)
         cell.btnadd1.tag = indexPath.row
+        cell.delegate = self
+        cell.index = indexPath.row
         cell.btnadd1.addTarget(self, action: #selector(btnAddOrder(_ :)), for: .touchUpInside)
         // Configure the cell
         
@@ -80,4 +86,35 @@ getproducts()
     }
     */
 
+}
+extension ProductDetailsViewController: OnSelection
+{
+    
+    func passProduct(index: Int) {
+        let p = a[index]
+        print(p.productname)
+        
+        let today=Date()
+ let shopcart=ShoppingCart(proid:p.productid,pname:p.productname,pprice:p.productprice,qty:Extra.quantity,pdate:today)
+        let c = sh.addcartitem(shop: shopcart)
+        print(sh.productList)
+        if(c==true)
+        {
+            let alert = UIAlertController(title:"product",message:"Added Sucessfully",preferredStyle: .alert)
+            let addaction=UIAlertAction(title: "Done", style: .default, handler: nil)
+            alert.addAction(addaction)
+            self.present(alert,animated: true,completion: nil)
+         self.viewDidLoad()
+            
+        }
+        else
+        {
+            let alert = UIAlertController(title:"ERROR",message:"Try Again Later..",preferredStyle: .alert)
+            let addaction=UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(addaction)
+            self.present(alert,animated: true,completion: nil)
+            
+        }
+    }
+    
 }

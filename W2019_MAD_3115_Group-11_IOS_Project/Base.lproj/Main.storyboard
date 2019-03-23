@@ -343,6 +343,9 @@
                                                     <color key="backgroundColor" red="0.68904476820000005" green="0.066734083" blue="0.0" alpha="0.41103916950000002" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <state key="normal" title="ADD TO CART"/>
+                                                    <connections>
+                                                        <action selector="btnAddToCartClick:" destination="pL8-ak-JJe" eventType="touchUpInside" id="SuS-AJ-AJD"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </view>

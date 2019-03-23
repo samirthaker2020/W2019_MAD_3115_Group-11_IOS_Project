@@ -10,6 +10,8 @@ import UIKit
 
 class ProductDetailsCollectionViewCell: UICollectionViewCell
 {
+    var delegate: OnSelection?
+    var index: Int?
     
     @IBOutlet weak var lblpid: UILabel!
  
@@ -29,6 +31,35 @@ class ProductDetailsCollectionViewCell: UICollectionViewCell
     lblqty.text=String(Int(sender.value))
         
     }
+     
+    /*override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        
+        // Configure the view for the selected state
+    }*/
     
+    @IBAction func btnAddToCartClick(_ sender: UIButton)
+    {
+        if(lblqty.text=="")
+        {
+             
+        }
+        else
+        {
+            if let  i = index{
+                if let d = delegate
+                {
+                    d.passProduct(index: i)
+                }
+            }
+        }
+       
+    }
     
 }
+
+protocol OnSelection:class {
+    func passProduct(index: Int)
+}
+    
+
